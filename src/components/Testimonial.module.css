@@ -1,0 +1,79 @@
+.vectorIcon {
+  width: 40.1px;
+  height: 29.9px;
+  position: relative;
+  object-fit: contain;
+}
+.shortTestimonial {
+  margin: 0;
+  align-self: stretch;
+  height: 93px;
+  position: relative;
+  line-height: 140%;
+  display: inline-block;
+  min-width: 200px;
+}
+.imageLummiCategoryavata {
+  height: 64px;
+  width: 64px;
+  position: relative;
+  border-radius: var(--br-41xl);
+  object-fit: cover;
+}
+.companyJob,
+.name {
+  position: relative;
+  line-height: 150%;
+}
+.companyJob {
+  font-size: var(--font-size-sm);
+  line-height: 160%;
+}
+.text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-xl) 0 0;
+}
+.author,
+.testimonial {
+  display: flex;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+.author {
+  align-self: stretch;
+  height: 60px;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  gap: var(--gap-xl);
+  min-width: 120px;
+  font-size: var(--font-size-base);
+}
+.testimonial {
+  flex: 1;
+  border-radius: var(--br-base);
+  background-color: var(--color-darkslategray);
+  flex-direction: column;
+  align-items: flex-start;
+  padding: var(--padding-13xl);
+  gap: var(--gap-13xl);
+  min-width: 360px;
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--font-size-3xl);
+  color: var(--color-whitesmoke);
+  font-family: var(--font-lato);
+}
+@media screen and (max-width: 450px) {
+  .shortTestimonial {
+    font-size: var(--font-size-lg);
+    line-height: 25px;
+  }
+  .testimonial {
+    gap: var(--gap-base);
+  }
+}

@@ -1,0 +1,71 @@
+.sayingAboutUs,
+.whatOurClients {
+  margin: 0;
+}
+.heading {
+  margin: 0;
+  align-self: stretch;
+  height: 120px;
+  position: relative;
+  font-size: inherit;
+  line-height: 130%;
+  font-weight: 900;
+  font-family: inherit;
+  display: inline-block;
+}
+.property1testimonials3Larg,
+.testimonialsGrid {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.testimonialsGrid {
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding: 0 var(--padding-5xl);
+  gap: 24px 22px;
+  max-width: 1248px;
+  text-align: left;
+  font-size: var(--font-size-3xl);
+  font-family: var(--font-lato);
+}
+.property1testimonials3Larg {
+  align-self: stretch;
+  background-color: var(--color-gray-200);
+  flex-direction: column;
+  align-items: center;
+  padding: var(--padding-101xl) var(--padding-base);
+  gap: var(--gap-21xl);
+  max-width: 100%;
+  text-align: center;
+  font-size: var(--font-size-27xl);
+  color: var(--color-whitesmoke);
+  font-family: var(--font-playfair-display);
+}
+@media screen and (max-width: 1200px) {
+  .testimonialsGrid {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .heading {
+    font-size: var(--font-size-18xl);
+    line-height: 48px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .property1testimonials3Larg {
+    gap: var(--gap-xl);
+    padding-top: var(--padding-59xl);
+    padding-bottom: var(--padding-59xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .heading {
+    font-size: var(--font-size-9xl);
+    line-height: 36px;
+  }
+}

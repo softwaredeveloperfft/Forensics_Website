@@ -1,0 +1,207 @@
+.heading,
+.subheading {
+  align-self: stretch;
+  position: relative;
+}
+.heading {
+  margin: 0;
+  font-size: inherit;
+  line-height: 120%;
+  font-weight: 900;
+  font-family: inherit;
+}
+.subheading {
+  font-size: var(--font-size-lg);
+  line-height: 150%;
+  font-family: var(--font-lato);
+  color: var(--color-white);
+}
+.bigCardParent,
+.headingContainer {
+  display: flex;
+  align-items: flex-start;
+}
+.headingContainer {
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+  max-width: 800px;
+}
+.bigCardParent {
+  align-self: stretch;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px 22px;
+  max-width: 100%;
+}
+.subheading1 {
+  line-height: 160%;
+}
+.heading1,
+.subheading1,
+.text {
+  align-self: stretch;
+  position: relative;
+}
+.heading1 {
+  margin: 0;
+  height: 78px;
+  font-size: inherit;
+  line-height: 138%;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+}
+.text {
+  font-size: var(--font-size-lg);
+  line-height: 150%;
+}
+.content2,
+.contentContainer {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.content2 {
+  gap: var(--gap-5xs);
+  font-size: var(--font-size-9xl);
+}
+.contentContainer {
+  gap: var(--gap-base);
+}
+.cta1 {
+  position: relative;
+  line-height: 160%;
+}
+.button,
+.cta {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.cta {
+  align-self: stretch;
+  justify-content: flex-start;
+  text-align: center;
+}
+.content1,
+.imageLummi {
+  max-width: 100%;
+  min-width: 240px;
+}
+.content1 {
+  flex: 0.8933;
+  background-color: var(--color-gray-200);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: var(--padding-64xl-5) var(--padding-13xl);
+  box-sizing: border-box;
+  gap: var(--gap-5xl);
+}
+.imageLummi {
+  height: 364px;
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  object-fit: cover;
+  margin-left: -2px;
+}
+.bigCard,
+.cardsGrid {
+  align-self: stretch;
+  max-width: 100%;
+}
+.bigCard {
+  border-radius: var(--br-5xs);
+  border: 1px solid var(--color-dimgray);
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  min-width: 320px;
+}
+.cardsGrid {
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-5xl);
+  font-size: var(--font-size-sm);
+  font-family: var(--font-lato);
+}
+.cardsGrid,
+.content,
+.typethreeFeatureCards {
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  width: 100%;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+  max-width: 1200px;
+}
+.typethreeFeatureCards {
+  align-self: stretch;
+  background-color: var(--color-gray-200);
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-101xl) var(--padding-21xl);
+  box-sizing: border-box;
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--font-size-37xl);
+  color: var(--color-whitesmoke);
+  font-family: var(--font-playfair-display);
+}
+@media screen and (max-width: 1200px) {
+  .content {
+    max-width: 100%;
+  }
+  .typethreeFeatureCards {
+    padding-top: var(--padding-59xl);
+    padding-bottom: var(--padding-59xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .heading {
+    font-size: var(--font-size-26xl);
+    line-height: 54px;
+  }
+  .headingContainer {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .typethreeFeatureCards {
+    gap: var(--gap-xl);
+    padding-top: var(--padding-32xl);
+    padding-bottom: var(--padding-32xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .heading {
+    font-size: var(--font-size-15xl);
+    line-height: 40px;
+  }
+  .heading1 {
+    font-size: var(--font-size-3xl);
+    line-height: 31px;
+  }
+  .content1 {
+    padding-top: var(--padding-35xl);
+    padding-bottom: var(--padding-35xl);
+    box-sizing: border-box;
+  }
+}
