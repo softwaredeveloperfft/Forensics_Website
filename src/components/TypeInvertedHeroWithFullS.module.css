@@ -1,15 +1,12 @@
 .heading,
 .subheading {
-  margin: 0;
   align-self: stretch;
   position: relative;
 }
 .heading {
-  font-size: inherit;
   letter-spacing: -0.01em;
   line-height: 108%;
   font-weight: 900;
-  font-family: inherit;
   display: -webkit-inline-box;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -19,7 +16,6 @@
 .subheading {
   font-size: var(--font-size-3xl);
   line-height: 140%;
-  font-weight: 400;
   font-family: var(--font-lato);
   color: var(--color-gray-100);
 }
@@ -33,11 +29,7 @@
 }
 .cta {
   position: relative;
-  font-size: var(--font-size-lg);
   line-height: 150%;
-  font-family: var(--font-lato);
-  color: var(--color-white);
-  text-align: center;
   white-space: nowrap;
 }
 .ctaButton,
@@ -49,14 +41,16 @@
   padding: var(--padding-9xs);
 }
 .ctaButton {
-  cursor: pointer;
-  border: 0;
-  padding: var(--padding-2xs) var(--padding-xl);
-  background-color: var(--color-darkcyan);
   width: 100%;
   border-radius: var(--br-9xs);
+  background-color: var(--color-darkcyan);
+  padding: var(--padding-2xs) var(--padding-xl);
   box-sizing: border-box;
   max-width: 360px;
+  text-align: center;
+  font-size: var(--font-size-lg);
+  color: var(--color-white);
+  font-family: var(--font-lato);
 }
 .copyComponent,
 .copyContainer {

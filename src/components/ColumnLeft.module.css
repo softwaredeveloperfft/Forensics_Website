@@ -1,19 +1,15 @@
 .description,
 .heading {
-  margin: 0;
   align-self: stretch;
   position: relative;
 }
 .heading {
-  font-size: inherit;
   line-height: 120%;
   font-weight: 900;
-  font-family: inherit;
 }
 .description {
   font-size: var(--font-size-3xl);
   line-height: 140%;
-  font-weight: 400;
   font-family: var(--font-lato);
 }
 .copy {
@@ -78,11 +74,9 @@
 .featureTitle1 {
   align-self: stretch;
   position: relative;
+  line-height: 150%;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-.featureTitle1 {
-  line-height: 150%;
   white-space: nowrap;
 }
 .featureDescription1 {

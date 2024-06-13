@@ -1,63 +1,23 @@
-.label {
-  align-self: stretch;
-  position: relative;
-  line-height: 160%;
-}
-.input,
-.inputForm {
-  align-self: stretch;
-  display: flex;
-  align-items: flex-start;
-}
-.inputForm {
-  border: 1px solid var(--color-dimgray);
-  background-color: var(--color-gray-200);
-  height: 174px;
-  width: auto;
-  outline: 0;
-  border-radius: var(--br-9xs);
-  box-sizing: border-box;
-  flex-direction: row;
-  justify-content: flex-start;
-  padding: var(--padding-base) var(--padding-xl);
-  font-family: var(--font-lato);
-  font-size: var(--font-size-sm);
-  color: var(--color-white);
-}
-.input {
-  flex-direction: column;
-  justify-content: center;
-  gap: var(--gap-9xs);
-  min-width: 230px;
-  min-height: 200px;
-}
 .cta {
   position: relative;
-  font-size: var(--font-size-sm);
   line-height: 160%;
-  font-family: var(--font-lato);
-  color: var(--color-white);
-  text-align: center;
-}
-.textContainer {
-  flex-direction: row;
-  align-items: center;
-  padding: var(--padding-9xs);
 }
 .button,
 .columnRight,
 .textContainer {
   display: flex;
-  justify-content: center;
-}
-.button {
-  cursor: pointer;
-  border: 0;
-  padding: var(--padding-xs-5) var(--padding-5xl);
-  background-color: var(--color-darkcyan);
-  border-radius: var(--br-9xs);
   flex-direction: row;
   align-items: center;
+  justify-content: center;
+  padding: var(--padding-9xs);
+}
+.button,
+.columnRight {
+  border-radius: var(--br-9xs);
+  background-color: var(--color-darkcyan);
+  padding: var(--padding-xs-5) var(--padding-5xl);
+  text-align: center;
+  color: var(--color-white);
 }
 .columnRight {
   flex: 1;

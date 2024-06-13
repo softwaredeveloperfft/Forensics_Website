@@ -4,11 +4,8 @@
   position: relative;
 }
 .heading {
-  margin: 0;
-  font-size: inherit;
   line-height: 120%;
   font-weight: 900;
-  font-family: inherit;
 }
 .subheading {
   font-size: var(--font-size-sm);
@@ -16,7 +13,7 @@
   font-family: var(--font-lato);
   color: var(--color-white);
 }
-.benefitHeading {
+.benefitsHeader {
   align-self: stretch;
   display: flex;
   flex-direction: column;
@@ -31,16 +28,20 @@
 }
 .featureDescription,
 .featureTitle {
-  align-self: stretch;
   position: relative;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 .featureTitle {
+  width: 392px;
   line-height: 150%;
+  display: inline-block;
   white-space: nowrap;
+  max-width: 112%;
+  flex-shrink: 0;
 }
 .featureDescription {
+  align-self: stretch;
   font-size: var(--font-size-sm);
   line-height: 160%;
   color: var(--color-white);
@@ -57,6 +58,8 @@
 .featureCopy {
   flex: 1;
   flex-direction: column;
+  padding: 0;
+  box-sizing: border-box;
   gap: var(--gap-5xs);
   min-width: 229px;
   max-width: 100%;

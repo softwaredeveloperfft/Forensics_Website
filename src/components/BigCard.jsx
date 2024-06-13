@@ -30,10 +30,10 @@ const BigCard = ({
         <div className={styles.contentContainer}>
           <div className={styles.subheading}>{subheading}</div>
           <div className={styles.content1}>
-            <h1 className={styles.heading} style={headingStyle}>
+            <div className={styles.heading} style={headingStyle}>
               {heading}
-            </h1>
-            <div className={styles.text}>{text}</div>
+            </div>
+            <div className={styles.contentDescription}>{text}</div>
           </div>
         </div>
         <div className={styles.cta}>
@@ -42,12 +42,7 @@ const BigCard = ({
           </div>
         </div>
       </div>
-      <img
-        className={styles.imageLummi}
-        loading="lazy"
-        alt=""
-        src={imageLummi}
-      />
+      <img className={styles.imageLummi} alt="" src={imageLummi} />
     </div>
   );
 };

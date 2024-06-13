@@ -1,23 +1,27 @@
-.label {
-  align-self: stretch;
+.label,
+.placeholderText {
   position: relative;
   line-height: 160%;
 }
+.label {
+  align-self: stretch;
+}
+.placeholderText {
+  width: 68px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 .textContainer {
   width: 171px;
-  border: 0;
-  outline: 0;
-  background-color: transparent;
-  height: 22px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
   padding: 0 var(--padding-9xs);
   box-sizing: border-box;
-  font-family: var(--font-lato);
-  font-size: var(--font-size-sm);
-  color: var(--color-white);
 }
 .input,
 .inputForm {
@@ -32,6 +36,7 @@
   align-items: center;
   justify-content: flex-start;
   padding: var(--padding-mini) var(--padding-base);
+  color: var(--color-white);
 }
 .input {
   flex-direction: column;

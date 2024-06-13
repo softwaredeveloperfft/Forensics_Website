@@ -10,19 +10,11 @@ const Testimonial = ({
 }) => {
   return (
     <div className={[styles.testimonial, className].join(" ")}>
-      <img
-        className={styles.vectorIcon}
-        loading="lazy"
-        alt=""
-        src="/vector.svg"
-      />
-      <blockquote className={styles.shortTestimonial}>
-        {shortTestimonial}
-      </blockquote>
+      <img className={styles.vectorIcon} alt="" src="/vector.svg" />
+      <div className={styles.shortTestimonial}>{shortTestimonial}</div>
       <div className={styles.author}>
         <img
           className={styles.imageLummiCategoryavata}
-          loading="lazy"
           alt=""
           src={imageLummiCategoryavatars}
         />

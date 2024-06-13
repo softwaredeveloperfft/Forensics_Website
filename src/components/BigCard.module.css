@@ -1,22 +1,18 @@
 .subheading {
   line-height: 160%;
 }
+.contentDescription,
 .heading,
-.subheading,
-.text {
+.subheading {
   align-self: stretch;
   position: relative;
 }
 .heading {
-  margin: 0;
   height: 156px;
-  font-size: inherit;
   line-height: 138%;
-  font-weight: 400;
-  font-family: inherit;
   display: inline-block;
 }
-.text {
+.contentDescription {
   font-size: var(--font-size-lg);
   line-height: 150%;
 }

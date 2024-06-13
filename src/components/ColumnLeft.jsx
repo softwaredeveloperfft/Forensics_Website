@@ -5,18 +5,13 @@ const ColumnLeft = ({ className = "" }) => {
   return (
     <div className={[styles.columnLeft, className].join(" ")}>
       <div className={styles.copy}>
-        <h1 className={styles.heading}>Get in touch</h1>
-        <h3 className={styles.description}>
+        <div className={styles.heading}>Get in touch</div>
+        <div className={styles.description}>
           We’re here to help with any inquiries.
-        </h3>
+        </div>
       </div>
       <div className={styles.feature01}>
-        <img
-          className={styles.iconIcon}
-          loading="lazy"
-          alt=""
-          src="/icon--icon-3.svg"
-        />
+        <img className={styles.iconIcon} alt="" src="/icon--icon-3.svg" />
         <div className={styles.featureCopy}>
           <div className={styles.featureTitle}>Email</div>
           <div className={styles.featureDescription}>
@@ -28,20 +23,15 @@ const ColumnLeft = ({ className = "" }) => {
         <img className={styles.iconIcon1} alt="" src="/icon--icon-4.svg" />
         <div className={styles.featureCopy1}>
           <div className={styles.featureTitle1}>Phone</div>
-          <div className={styles.featureDescription1}>+1 (800) 123-4567</div>
+          <div className={styles.featureDescription1}>+91 8527317000</div>
         </div>
       </div>
       <div className={styles.feature012}>
-        <img
-          className={styles.iconIcon2}
-          loading="lazy"
-          alt=""
-          src="/icon--icon-5.svg"
-        />
+        <img className={styles.iconIcon2} alt="" src="/icon--icon-5.svg" />
         <div className={styles.featureCopy2}>
           <div className={styles.featureTitle2}>Location</div>
           <div className={styles.featureDescription2}>
-            1234 Forensics St, Tech City, Country
+            582, Sector 21 B Faridabad, Haryana
           </div>
         </div>
       </div>

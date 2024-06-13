@@ -5,22 +5,28 @@ import styles from "./ColumnRight.module.css";
 const ColumnRight = ({ className = "" }) => {
   return (
     <div className={[styles.columnRight, className].join(" ")}>
-      <Input label="Name" textContainerPlaceholder="Your Name" />
-      <Input label="Email" textContainerPlaceholder="Your Email" />
-      <div className={styles.input}>
-        <div className={styles.label}>Message</div>
-        <textarea
-          className={styles.inputForm}
-          placeholder="Your Message"
-          rows={9}
-          cols={24}
-        />
-      </div>
-      <button className={styles.button}>
+      <Input label="Name" placeholderText="Your Name" />
+      <Input
+        label="Email"
+        placeholderText="Your Email"
+        inputMinHeight="unset"
+        inputFormPadding="var(--padding-mini) var(--padding-base)"
+        inputFormHeight="unset"
+        placeholderTextWidth="65px"
+      />
+      <Input
+        label="Message"
+        placeholderText="Your Message"
+        inputMinHeight="200px"
+        inputFormPadding="0px 16px"
+        inputFormHeight="174px"
+        placeholderTextWidth="86px"
+      />
+      <div className={styles.button}>
         <div className={styles.textContainer}>
           <div className={styles.cta}>Submit</div>
         </div>
-      </button>
+      </div>
     </div>
   );
 };

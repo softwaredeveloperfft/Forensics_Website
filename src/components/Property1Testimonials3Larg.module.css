@@ -3,14 +3,11 @@
   margin: 0;
 }
 .heading {
-  margin: 0;
   align-self: stretch;
   height: 120px;
   position: relative;
-  font-size: inherit;
   line-height: 130%;
   font-weight: 900;
-  font-family: inherit;
   display: inline-block;
 }
 .property1testimonials3Larg,

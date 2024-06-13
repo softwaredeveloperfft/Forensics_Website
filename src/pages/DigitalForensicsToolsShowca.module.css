@@ -1,7 +1,6 @@
 .brandname {
   position: relative;
   line-height: 150%;
-  white-space: nowrap;
 }
 .brand {
   display: flex;
@@ -91,26 +90,16 @@
   align-items: center;
   justify-content: space-between;
   padding: var(--padding-5xs);
-  position: sticky;
-  top: 0;
-  z-index: 99;
+  position: relative;
   gap: var(--gap-xl);
-  text-align: left;
-  font-size: var(--font-size-xs);
-  color: var(--color-whitesmoke);
-  font-family: var(--font-lato);
+  z-index: 7;
 }
 .benefitHeading,
 .heading {
-  margin: 0;
   align-self: stretch;
   position: relative;
-  font-weight: 900;
-  font-family: inherit;
-}
-.benefitHeading {
-  font-size: inherit;
   line-height: 130%;
+  font-weight: 900;
 }
 .heading {
   height: 201px;
@@ -138,7 +127,6 @@
   padding: 144px var(--padding-xl);
   box-sizing: border-box;
   max-width: 100%;
-  text-align: left;
   font-size: 36px;
   color: #00adb5;
   font-family: var(--font-playfair-display);
@@ -167,7 +155,7 @@
   position: relative;
   line-height: 150%;
 }
-.brandnameWrapper {
+.brandContainer {
   align-self: stretch;
   display: flex;
   flex-direction: row;
@@ -195,7 +183,7 @@
 .link3 {
   width: 63px;
 }
-.linkParent {
+.footerLinks {
   align-self: stretch;
   display: flex;
   flex-direction: row;
@@ -204,12 +192,12 @@
   gap: var(--gap-xl);
 }
 .footerContainer,
-.frameParent {
+.footerContent {
   display: flex;
   align-items: flex-start;
   max-width: 100%;
 }
-.frameParent {
+.footerContent {
   width: 341px;
   flex-direction: column;
   justify-content: flex-start;
@@ -281,10 +269,7 @@
   box-sizing: border-box;
   gap: 64px;
   max-width: 100%;
-  text-align: left;
   font-size: var(--font-size-lg);
-  color: var(--color-whitesmoke);
-  font-family: var(--font-lato);
 }
 .digitalForensicsToolsShowca {
   width: 100%;
@@ -292,6 +277,10 @@
   background-color: var(--color-white);
   line-height: normal;
   letter-spacing: normal;
+  text-align: left;
+  font-size: var(--font-size-xs);
+  color: var(--color-whitesmoke);
+  font-family: var(--font-lato);
 }
 @media screen and (max-width: 1200px) {
   .container {
@@ -343,6 +332,9 @@
   }
 }
 @media screen and (max-width: 450px) {
+  .typecenteredNavWithBrandO {
+    flex-wrap: wrap;
+  }
   .benefitHeading {
     font-size: var(--font-size-3xl);
     line-height: 28px;
@@ -356,10 +348,7 @@
     padding-bottom: var(--padding-28xl);
     box-sizing: border-box;
   }
-  .linkParent {
-    flex-wrap: wrap;
-  }
-  .frameParent {
+  .footerContent {
     gap: var(--gap-base);
   }
   .legalLinks {

@@ -9,7 +9,7 @@ import styles from "./DigitalForensicsToolsShowca.module.css";
 const DigitalForensicsToolsShowca = () => {
   return (
     <div className={styles.digitalForensicsToolsShowca}>
-      <header className={styles.typecenteredNavWithBrandO}>
+      <div className={styles.typecenteredNavWithBrandO}>
         <div className={styles.brand}>
           <div className={styles.brandname}>Forensics GURU</div>
         </div>
@@ -29,33 +29,33 @@ const DigitalForensicsToolsShowca = () => {
             <div className={styles.navLabel2}>Services</div>
           </div>
         </div>
-      </header>
+      </div>
       <TypeInvertedHeroWithFullS />
-      <section className={styles.typebigStatementInverted}>
+      <div className={styles.typebigStatementInverted}>
         <div className={styles.textContent}>
-          <h1 className={styles.benefitHeading}>Our Mission</h1>
-          <h1 className={styles.heading}>
+          <div className={styles.benefitHeading}>Our Mission</div>
+          <div className={styles.heading}>
             We strive to empower digital crime fighters with cutting-edge
             forensics solutions.
-          </h1>
+          </div>
         </div>
-      </section>
+      </div>
       <TypeThreeFeatureCards />
       <TypeMobileDeviceMockupBene />
       <Property1Testimonials3Larg />
-      <section className={styles.property1listFormBoxed}>
+      <div className={styles.property1listFormBoxed}>
         <div className={styles.container}>
           <ColumnLeft />
           <ColumnRight />
         </div>
-      </section>
-      <footer className={styles.typestackedSimpleFooter}>
+      </div>
+      <div className={styles.typestackedSimpleFooter}>
         <div className={styles.footerContainer}>
-          <div className={styles.frameParent}>
-            <div className={styles.brandnameWrapper}>
+          <div className={styles.footerContent}>
+            <div className={styles.brandContainer}>
               <div className={styles.brandname1}>Forensics GURU</div>
             </div>
-            <div className={styles.linkParent}>
+            <div className={styles.footerLinks}>
               <div className={styles.link}>About</div>
               <div className={styles.link1}>Services</div>
               <div className={styles.link2}>LinkedIn</div>
@@ -76,7 +76,7 @@ const DigitalForensicsToolsShowca = () => {
             </div>
           </div>
         </div>
-      </footer>
+      </div>
     </div>
   );
 };

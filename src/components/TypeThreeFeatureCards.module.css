@@ -4,11 +4,8 @@
   position: relative;
 }
 .heading {
-  margin: 0;
-  font-size: inherit;
   line-height: 120%;
   font-weight: 900;
-  font-family: inherit;
 }
 .subheading {
   font-size: var(--font-size-lg);
@@ -16,8 +13,8 @@
   font-family: var(--font-lato);
   color: var(--color-white);
 }
-.bigCardParent,
-.headingContainer {
+.headingContainer,
+.largeCard {
   display: flex;
   align-items: flex-start;
 }
@@ -28,7 +25,7 @@
   gap: var(--gap-5xs);
   max-width: 800px;
 }
-.bigCardParent {
+.largeCard {
   align-self: stretch;
   flex-direction: row;
   flex-wrap: wrap;
@@ -39,22 +36,18 @@
 .subheading1 {
   line-height: 160%;
 }
+.buttonDescription,
 .heading1,
-.subheading1,
-.text {
+.subheading1 {
   align-self: stretch;
   position: relative;
 }
 .heading1 {
-  margin: 0;
   height: 78px;
-  font-size: inherit;
   line-height: 138%;
-  font-weight: 400;
-  font-family: inherit;
   display: inline-block;
 }
-.text {
+.buttonDescription {
   font-size: var(--font-size-lg);
   line-height: 150%;
 }

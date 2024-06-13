@@ -5,7 +5,6 @@
   object-fit: contain;
 }
 .shortTestimonial {
-  margin: 0;
   align-self: stretch;
   height: 93px;
   position: relative;
